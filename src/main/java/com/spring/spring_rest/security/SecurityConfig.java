@@ -57,6 +57,14 @@ public class SecurityConfig {
         this.userDetailsService = userDetailsService;
     }
 
+    public CustomUserDetailsService getUserDetailsService() {
+        return userDetailsService;
+    }
+
+    public void setUserDetailsService(CustomUserDetailsService userDetailsService) {
+        this.userDetailsService = userDetailsService;
+    }
+
     /**
      * Creates a BCrypt password encoder for hashing passwords.
      *
